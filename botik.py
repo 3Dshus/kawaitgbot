@@ -3,8 +3,8 @@ from flask import Flask, request
 import os
 import threading
 
-API_TOKEN = os.environ.get('BOT_TOKEN', '8534815900:AAHxGeuG6_SnOzIXwFTmaKoaMFiHsDX4b7E')
-MY_ID = os.environ.get('ADMIN_ID', 5279200582)
+API_TOKEN = os.environ.get('BOT_TOKEN')
+MY_ID = os.environ.get('ADMIN_ID')
 
 app = Flask(__name__)
 bot = telebot.TeleBot(API_TOKEN)
